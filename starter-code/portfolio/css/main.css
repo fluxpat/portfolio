@@ -18,6 +18,19 @@ h1 {
     margin: 30px 0 30px 0;
 }
 
+h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 30px 0 30px 0;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 30px 0 30px 0;
+    color: #CCD5E0;
+}
+
 h4 {
     font-size: 20px;
     font-weight: 500;
@@ -101,10 +114,28 @@ i:nth-child(8) {transition-delay: .16s;}
 
 .intro {
     display: flex;
+    height: 600px;
 }
 
 .intro-text {
     width: 65%;
+}
+
+.intro-text h1 {
+    color: white;
+    text-decoration: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+        to right, red, red 33.33%, white 66.66%);
+    background-size: 300% 100%;
+    background-position: 100%;
+    transition: background-position 2s cubic-bezier(0, 0.6, 0.2, 1);
+}
+
+.intro-text h1:hover {
+    transition: all 2s cubic-bezier(0, 0.4, 0.2, 0.8);
+    background-position: 0%;
 }
 
 .intro-images {
@@ -119,11 +150,31 @@ i:nth-child(8) {transition-delay: .16s;}
     background-size: cover;
     background-position: center;
     margin: 20px auto;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
+    box-shadow: grey;
 }
 
 .profile-pic:hover {
     width: 310px;
     height: 410px;
     transition-duration: 0.2s;
+}
+
+.section {
+    border-top: 1px solid #2E4050
+}
+
+.my-journey {
+    display: flex;
+    height: 400px;
+    align-items: center;
+}
+
+.my-journey-text {
+    width: 40%
+}
+
+.my-journey-map {
+    width: 60%;
+    line-height: 30px;
 }
