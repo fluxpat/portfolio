@@ -130,11 +130,11 @@ i:nth-child(8) {transition-delay: .16s;}
         to right, red, red 33.33%, white 66.66%);
     background-size: 300% 100%;
     background-position: 100%;
-    transition: background-position 2s cubic-bezier(0, 0.6, 0.2, 1);
+    transition: background-position 3s cubic-bezier(0, 0.6, 0.2, 1);
 }
 
 .intro-text h1:hover {
-    transition: all 2s cubic-bezier(0, 0.4, 0.2, 0.8);
+    transition: all 2s cubic-bezier(0.3, 0.4, 0.4, 0.8);
     background-position: 0%;
 }
 
@@ -151,7 +151,7 @@ i:nth-child(8) {transition-delay: .16s;}
     background-position: center;
     margin: 20px auto;
     transition-duration: 0.2s;
-    box-shadow: grey;
+    box-shadow: 10px 10px 15px 1px rgba(31, 56, 102, 0.3);
 }
 
 .profile-pic:hover {
