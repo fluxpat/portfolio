@@ -1,0 +1,22 @@
+body {
+    width: 60vw;
+    margin: auto;
+    font-family: "Arial", sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    text-align: center;
+}
+
+.header-title {
+    width: 20%;
+}
+
+.header-menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
