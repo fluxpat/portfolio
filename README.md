@@ -1,4 +1,4 @@
-# HTML, CSS & JavaScript Portfolio
+# HTML, CSS & JavaScript Portfolio [in progress]
 
 ## Introduction
 
