@@ -204,7 +204,6 @@ i:nth-child(8) {transition-delay: .16s;}
     background-image: url(../images/instagram-background.png);
     background-size: cover;
     opacity: 1;
-    background-color: ;
     transition: all 0.8s;
 }
 
