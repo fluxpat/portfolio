@@ -61,7 +61,8 @@ h5 {
 }
 
 .header-menu {
-    width: 50%;
+    width: 320px;
+    margin: 0 20px;
     display: flex;
     justify-content: space-evenly;
 }
