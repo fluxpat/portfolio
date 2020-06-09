@@ -6,6 +6,12 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+:root {
+    --primary: 0, 0%, 100%;
+	--secondary: 202, 73%, 28%;
+	--c: cubic-bezier(1,.49,.16,.96);
+}
+
 a {
     text-decoration: none;
     color: #FFFFFF;
@@ -14,26 +20,26 @@ a {
 h1 {
     font-size: 90px;
     font-weight: 800;
-    margin: 30px 0 30px 0;
+    margin: 20px 0;
 }
 
 h2 {
     font-size: 50px;
     font-weight: 700;
-    margin: 30px 0 30px 0;
+    margin: 20px 0;
 }
 
 h3 {
     font-size: 30px;
     font-weight: 600;
-    margin: 30px 0 30px 0;
+    margin: 20px 0;
     color: #CCD5E0;
 }
 
 h4 {
     font-size: 20px;
     font-weight: 500;
-    /* margin: 20px 0 20px 0; */
+    margin: 20px 0;
 }
 
 h5 {
@@ -41,21 +47,26 @@ h5 {
     font-weight: 500;
 }
 
+.section {
+    padding: 40px 0;
+    border-top: 1px solid #2E4050;
+}
+
+/* ------------------------------------------- HEADER ------------------------------------------- */
 .header {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    margin: 50px 0px;
+    margin: 50px 0px 20px 0;
 }
 
-:root {
-	--primary: 0, 0%, 100%;
-	--secondary: 202, 73%, 28%;
-	--c: cubic-bezier(1,.49,.16,.96);
+.header-menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
 }
-
-/* --------------------------------------- Title Animation -------------------------------------- */
-.header-title {
+/* --------------------------------------- LOGO Animation -------------------------------------- */
+.header-logo {
     width: 180px;
     height: 50px;
     text-align: left;
@@ -65,7 +76,7 @@ h5 {
     align-items: center;
     border-radius: 10px;
 }
-.header-title span {
+.header-logo span {
     margin: 12px 0;
     font-size: 24px;
     font-weight: 700;
@@ -78,7 +89,7 @@ h5 {
 	transition: all .3s var(--c);
     z-index: 100;
 }
-.header-title i {
+.header-logo i {
     content: '';
 	width: 100%;
 	height: 100%;
@@ -96,28 +107,69 @@ i:nth-child(6) {transition-delay: .12s;}
 i:nth-child(7) {transition-delay: .14s;}
 i:nth-child(8) {transition-delay: .16s;}
 
-.header-title:hover i {
+.header-logo:hover i {
     transform: scaleX(1);
 }
-.header-title:hover span {
+.header-logo:hover span {
     color: hsl(var(--secondary));
 	transition-delay: .3s;
 }
-/* ---------------------------------------------------------------------------------------------- */
 
-.header-menu {
-    width: 50%;
+/* ------------------------------------------- SOCIALS ------------------------------------------ */
+.socials {
+    position: fixed;
+    height: 300px;
+    right: 5vw;
+    margin: 80px 0 0 0;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
 }
-
-.intro {
-    display: flex;
-    height: 600px;
+.social-containers {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-image: none;
+}
+.instagram {
+    transition: all .5s
+}
+.instagram:hover {
+    background-color: #DD2A7B;
+    transition: all 0.8s;
+}
+.linkedin {
+    transition: all .5s
+}
+.linkedin:hover {
+    background-color: #0077B7;
+    transition: all .8s;
+}
+.gmail {
+    transition: all .5s
+}
+.gmail:hover {
+    background-color: #F44336;
+    transition: all .8s;
+}
+.github {
+    transition: all .5s
+}
+.github:hover {
+    background-color: #C8CFE4;
+    transition: all .8s;
+}
+.social-icons {
+    margin: 10px;
+    width: 30px;
+    height: 30px;
 }
 
-.intro-text {
-    width: 65%;
+/* ---------------------------------------- INTRODUCTION ---------------------------------------- */
+.intro {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
 }
 
 .intro-text h1 {
@@ -137,102 +189,46 @@ i:nth-child(8) {transition-delay: .16s;}
     background-position: 0%;
 }
 
-.intro-images {
-    width: 35%;
-}
-
 .profile-pic {
-    width: 300px;
+    width: 320px;
     height: 400px;
     border-radius: 10px;
-    background-image: url("https://scontent-syd2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p640x640/25037809_2036930079875268_5626359161500467200_n.jpg?_nc_ht=scontent-syd2-1.cdninstagram.com&_nc_cat=100&_nc_ohc=yikq9x72ycQAX_pk-ba&oh=6695dfc35920bd866e16d46930a51a90&oe=5EFCF4FB");
-    background-size: cover;
-    background-position: center;
-    margin: 20px auto;
-    transition-duration: 0.2s;
-    /* box-shadow: 10px 10px 15px 1px rgba(31, 56, 102, 0.3); */
+    margin: 20px;
 }
 
-.profile-pic:hover {
-    width: 310px;
-    height: 410px;
-    transition-duration: 0.2s;
-}
-
-.section {
-    border-top: 1px solid #2E4050
-}
-
-.my-journey {
-    display: flex;
-    height: 400px;
-    align-items: center;
-}
-
-.my-journey-text {
-    width: 40%
-}
-
-.my-journey-map {
-    width: 60%;
-    line-height: 30px;
-}
-
-/* ------------------------------------------- SOCIALS ------------------------------------------ */
-.socials {
-    position: fixed;
-    height: 300px;
-    right: 60px;
-    margin: 80px 30px 0 0;
+/* ------------------------------------------ ABOUT ME ------------------------------------------ */
+.about {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    align-items: center;
 }
-
-.social-containers {
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    background-image: none;
+.my-journey {
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
-
-.instagram {
-    /* opacity: 0; */
-    transition: all .5s
+.my-journey-title {
+    width: 30%;
 }
-.instagram:hover {
-    background-image: url(../images/instagram-background.png);
-    background-size: cover;
-    opacity: 1;
-    transition: all 0.8s;
+.my-journey-text {
+    width: 70%;
+    line-height: 30px;
+    margin:20px;
 }
-
-.linkedin {
-    transition: all .5s
+.my-tools {
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.linkedin:hover {
-    background-color: #0077B7;
-    transition: all .8s;
+.my-tools-pics {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-
-.gmail {
-    transition: all .5s
-}
-.gmail:hover {
-    background-color: #F44336;
-    transition: all .8s;
-}
-
-.github {
-    transition: all .5s
-}
-.github:hover {
-    background-color: #C8CFE4;
-    transition: all .8s;
-}
-
-.social-icons {
-    margin: 10px;
-    width: 30px;
-    height: 30px;
+.my-tools-pics img {
+    height: 60px;
 }
