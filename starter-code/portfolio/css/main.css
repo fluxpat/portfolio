@@ -232,3 +232,33 @@ i:nth-child(8) {transition-delay: .16s;}
 .my-tools-pics img {
     height: 60px;
 }
+
+/* ------------------------------------------ PROJECTS ------------------------------------------ */
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-examples {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+.project h4 {
+    margin: 5px 0;
+}
+.project h5 {
+    margin: 10px 0;
+}
+.project img {
+    max-width: 500px;
+    border-radius: 10px;
+}
