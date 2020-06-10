@@ -66,28 +66,25 @@
       <!-- <h1 class="intro-hi">
         Hi, I'm Patrick
         </h1> -->
-        <svg viewbox="0 0 100 20" class="intro-hi">
-          <defs>
-            <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
-              <stop offset="100%" stop-color="#ffffff"/>
-              <stop offset="95%" stop-color="#08101"/>
-            </linearGradient>
-            <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
-              <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
-                <animateTransform
-                    attributeName="transform"
-                    begin="0s"
-                    dur="1.5s"
-                    type="translate"
-                    from="0,0"
-                    to="40,0"
-                    repeatCount="indefinite" />
-              </path>
-            </pattern>
-          </defs>
-          <text text-anchor="middle" x="50" y="15" font-size="15" fill="url(#wave)"  fill-opacity="0.9">Hi, I'm Patrick</text>
-          <text text-anchor="middle" x="50" y="15" font-size="15" fill="url(#gradient)" fill-opacity="0.5">Hi, I'm Patrick</text>
-        </svg>
+      <svg viewbox="0 0 100 20" class="intro-hi">
+        <defs>
+          <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="100%" stop-color="#ffffff" />
+            <stop offset="95%" stop-color="#08101" />
+          </linearGradient>
+          <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+            <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z"
+              mask="url(#mask)" fill="url(#gradient)">
+              <animateTransform attributeName="transform" begin="0s" dur="1.5s" type="translate" from="0,0" to="40,0"
+                repeatCount="indefinite" />
+            </path>
+          </pattern>
+        </defs>
+        <text text-anchor="middle" x="50" y="15" font-size="15" fill="url(#wave)" fill-opacity="0.9">Hi, I'm
+          Patrick</text>
+        <text text-anchor="middle" x="50" y="15" font-size="15" fill="url(#gradient)" fill-opacity="0.5">Hi, I'm
+          Patrick</text>
+      </svg>
 
 
       <h4>
@@ -153,31 +150,86 @@
   <div class="projects section" id="projects">
     <h2>Projects</h2>
     <div class="project-examples">
-      <a href="https://github.com/whbrown/GardenGnome" class="project" target="_blank">
+      <div class="project">
         <h4>Garden Gnome</h4>
         <h5>A mobile-first garden management and database app</h5>
         <img src="./images/GardenGnome2.png" alt="GardenGnome screenshot">
-      </a>
-      <a class="project" target="_blank">
+        <a class="github-overlay" href="https://github.com/whbrown/GardenGnome" target="_blank">
+          <img src="./images/github.svg" alt="GardenGnome github repo">
+          <h4>Github Repo</h4>
+        </a>
+        <a class="www-overlay" href="http://gnome-garden.herokuapp.com/" target="_blank">
+          <img src="./images/www.png" alt="GardenGnome website">
+          <h4>App Website</h4>
+        </a>
+      </div>
+      <div class="project">
         <h4>Spotavibe</h4>
         <h5>A Spotify playlist generator that chooses music based on your heart-rate</h5>
         <img src="./images/Spotavibe.PNG" alt="Spotavibe screenshot">
-      </a>
-      <a class="project" target="_blank">
+        <a class="github-overlay" href="https://github.com/noamrubin22/spotavibe" target="_blank">
+          <img src="./images/github.svg" alt="Spotavibe github repo">
+          <h4>Github Repo</h4>
+        </a>
+        <a class="www-overlay" href="http://spotavibe.herokuapp.com/" target="_blank">
+          <img src="./images/www.png" alt="Spotavibe app website">
+          <h4>App Website</h4>
+        </a>
+      </div>
+      <div class="project">
         <h4>Dino Dance</h4>
         <h5>An arcade-style JavaScript game designed to test your rhythm</h5>
         <img src="./images/DinoDance.PNG" alt="DinoDance screenshot">
-      </a>
-      <a class="project" target="_blank">
+        <a class="github-overlay" href="https://github.com/fluxpat/DinoDance_Game" target="_blank">
+          <img src="./images/github.svg" alt="DinoDance github repo">
+          <h4>Github Repo</h4>
+        </a>
+        <a class="www-overlay" href="https://fluxpat.github.io/DinoDance_Game/" target="_blank">
+          <img src="./images/www.png" alt="DinoDance app website">
+          <h4>App Website</h4>
+        </a>
+      </div>
+      <div class="project">
         <h4>BreadCrumbs (in progress)</h4>
         <h5>A self-development app that helps you keep track of your thoughts</h5>
         <img src="./images/BreadCrumbs.PNG" alt="BreadCrumbs screenshot">
-      </a>
+        <a class="github-overlay" href="https://github.com/fluxpat/BreadCrumbs" target="_blank">
+          <img src="./images/github.svg" alt="BreadCrumbs github repo">
+          <h4>Github Repo</h4>
+        </a>
+        <a class="www-overlay" href="https://breadcrumb.herokuapp.com/" target="_blank">
+          <img src="./images/www.png" alt="BreadCrumbs app website">
+          <h4>App Website</h4>
+        </a>
+      </div>
     </div>
   </div>
 
   <div class="contact section" id="contact">
+    <div class="contact-title">
+      <h2>Get in touch</h2>
+      <h3>Connect with me!</h3>
+    </div>
+    <div class="contact-text">
+      <a class="contact-option" href="https://github.com/fluxpat" target="_blank">
+        <h4>GitHub:</h4>
+        <p>github.com/fluxpat</p>
+      </a>
+      <a class="contact-option" href="https://www.linkedin.com/in/pckcho/" target="_blank">
+        <h4>LinkedIn:</h4>
+        <p>linkedin.com/in/pckcho</p>
+      </a>
+      <a class="contact-option" href="mailto:pck.cho@gmail.com" target="_blank">
+        <h4>Email:</h4>
+        <p>pck.cho@gmail.com</p>
+      </a>
+    </div>
   </div>
+
+  <div class="footer section" id="footer">
+    <p>© 2020 Patrick Cho - All rights reserved</p>
+  </div>
+
 
 </body>
 
