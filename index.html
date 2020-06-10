@@ -10,7 +10,7 @@
 <body>
 
   <div class="header">
-    <div class="header-logo">
+    <a href="#about" class="header-logo">
       <i></i>
       <i></i>
       <i></i>
@@ -22,32 +22,42 @@
       <span>
         Patrick Cho
       </span>
-    </div>
+    </a>
     <div class="header-menu">
-      <h5>
-        About
-      </h5>
-      <h5>
-        Projects
-      </h5>
-      <h5>
-        Contact
-      </h5>
+      <a href="#about">
+        <h5>
+          About
+        </h5>
+      </a>
+      <a href="#projects">
+        <h5>
+          Projects
+        </h5>
+      </a>
+      <a href="#contact">
+        <h5>
+          Contact
+        </h5>
+      </a>
     </div>
   </div>
 
   <div class="socials">
-    <a href="" class="social-containers github">
+    <a href="https://github.com/fluxpat" class="social-containers github" target="_blank">
       <img src="./images/github.svg" class="social-icons" alt="">
     </a>
-    <a href="" class="social-containers linkedin">
+    <a href="https://www.linkedin.com/in/pckcho/" class="social-containers linkedin" target="_blank">
       <img src="./images/linkedin.svg" class="social-icons" alt="">
     </a>
-    <a href="" class="social-containers instagram">
+    <a href="https://www.instagram.com/fluxpat/" class="social-containers instagram" target="_blank">
       <img src="./images/instagram.svg" class="social-icons" alt="">
     </a>
-    <a href="" class="social-containers gmail">
+    <a href="mailto:pck.cho@gmail.com" class="social-containers gmail" target="_blank">
       <img src="./images/gmail.svg" class="social-icons" alt="">
+    </a>
+    <a href="#top" class="social-containers to-top">
+      <img src="./images/up-arrow.png" alt="Back to top button" style="width:20px;margin:20px 0 5px 0">
+      <p style="margin:0">To top</p>
     </a>
   </div>
 
@@ -57,7 +67,7 @@
         Hi, I'm Patrick
       </h1>
       <h4>
-        I'm a web developer who finds joy in creating and discovering beautiful web products.
+        I'm a web developer who finds joy in creating beautiful web products.
       </h4>
       <h4>
         I'm fascinated by innovative websites, products and user experiences.
@@ -65,6 +75,7 @@
       <h4>
         My simple hope is to share my creativity with the world.
       </h4>
+      <br>
       <h4>
         Currently living in Sydney Australia 🏠
       </h4>
@@ -77,7 +88,7 @@
       </div> -->
   </div>
 
-  <div class="about section">
+  <div class="about section" id="about">
     <div class="my-journey">
       <div class="my-journey-title">
         <h2>My journey</h2>
@@ -86,12 +97,12 @@
       <div class="my-journey-text">
         <h4>
           I completed my Bachelors in Mechanical Engineering in 2016 and immediately began a career in management
-          consulting. I worked on large business transformation projects but always found myself gravitating towards the
+          consulting. I worked on large business transformation projects but always found myself drawn towards the
           digital space. I quickly realised I was hungry to use my creative skills in my career and fell in love with
           software programming.
         </h4>
         <h4>
-          I realised I wanted to get involved directly in the creation of great user experiences with software.
+          I wanted to get involved directly in the creation of great user experiences with software.
           This lead me to study UX Design in 2018 and to travel across the world in 2019 to Berlin to complete a
           course in Full Stack Web Development.
         </h4>
@@ -103,45 +114,45 @@
     <div class="my-tools">
       <h3>The technologies I use:</h3>
       <div class="my-tools-pics">
-        <img src="./images/HTML5.png" alt="">
-        <img src="./images/CSS3.png" alt="">
-        <img src="./images/JavaScript2.png" alt="">
-        <img src="./images/REACT.png" alt="">
-        <img src="./images/NodeJS.png" alt="">
+        <img src="./images/HTML5.png" alt="HTML5">
+        <img src="./images/CSS3.png" alt="CSS3">
+        <img src="./images/JavaScript2.png" alt="JavaScript">
+        <img src="./images/REACT.png" alt="React">
+        <img src="./images/NodeJS.png" alt="Node">
         <!-- <img src="./images/ExpressJS.png" alt=""> -->
-        <img src="./images/Mongo_DB.png" alt="">
-        <img src="./images/Mongoose.png" alt="">
+        <img src="./images/Mongo_DB.png" alt="MongoDB">
+        <img src="./images/Mongoose.png" alt="Mongoose">
       </div>
     </div>
   </div>
 
-  <div class="projects section">
+  <div class="projects section" id="projects">
     <h2>Projects</h2>
     <div class="project-examples">
-      <div class="project">
+      <a href="https://github.com/whbrown/GardenGnome" class="project" target="_blank">
         <h4>Garden Gnome</h4>
         <h5>A mobile-first garden management and database app</h5>
         <img src="./images/GardenGnome2.png" alt="GardenGnome screenshot">
-      </div>
-      <div class="project">
+      </a>
+      <a class="project" target="_blank">
         <h4>Spotavibe</h4>
         <h5>A Spotify playlist generator that chooses music based on your heart-rate</h5>
         <img src="./images/Spotavibe.PNG" alt="Spotavibe screenshot">
-      </div>
-      <div class="project">
+      </a>
+      <a class="project" target="_blank">
         <h4>Dino Dance</h4>
         <h5>An arcade-style JavaScript game designed to test your rhythm</h5>
         <img src="./images/DinoDance.PNG" alt="DinoDance screenshot">
-      </div>
-      <div class="project">
+      </a>
+      <a class="project" target="_blank">
         <h4>BreadCrumbs (in progress)</h4>
         <h5>A self-development app that helps you keep track of your thoughts</h5>
         <img src="./images/BreadCrumbs.PNG" alt="BreadCrumbs screenshot">
-      </div>
+      </a>
     </div>
   </div>
 
-  <div class="contact section">
+  <div class="contact section" id="contact">
   </div>
 
 </body>

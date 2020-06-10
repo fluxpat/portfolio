@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 70vw;
     margin: auto;
@@ -8,7 +12,9 @@ body {
 
 :root {
     --primary: 0, 0%, 100%;
-	--secondary: 202, 73%, 28%;
+    --secondary: 202, 73%, 28%;
+    --lightBlue: #00B0FF;
+    --grey: #2E4050;
 	--c: cubic-bezier(1,.49,.16,.96);
 }
 
@@ -59,12 +65,27 @@ h5 {
     text-align: center;
     margin: 50px 0px 20px 0;
 }
-
 .header-menu {
     width: 320px;
     margin: 0 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    text-align: center;
+}
+.header-menu a {
+    background-color: var(--grey);
+    border-radius: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+.header-menu h5 {
+    margin: 10px 20px;
+}
+.header-menu a:hover {
+    background-color: var(--lightBlue);
 }
 /* --------------------------------------- LOGO Animation -------------------------------------- */
 .header-logo {
@@ -132,69 +153,71 @@ i:nth-child(8) {transition-delay: .16s;}
     border-radius: 25px;
     background-image: none;
 }
+.social-icons {
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+}
 .instagram {
     transition: all .5s
 }
 .instagram:hover {
     background-color: #DD2A7B;
-    transition: all 0.8s;
 }
 .linkedin {
     transition: all .5s
 }
 .linkedin:hover {
     background-color: #0077B7;
-    transition: all .8s;
 }
 .gmail {
     transition: all .5s
 }
 .gmail:hover {
     background-color: #F44336;
-    transition: all .8s;
 }
 .github {
     transition: all .5s
 }
 .github:hover {
     background-color: #C8CFE4;
-    transition: all .8s;
 }
-.social-icons {
-    margin: 10px;
-    width: 30px;
-    height: 30px;
+.to-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all .5s;
 }
+.to-top:hover {
+    transform: translateY(-8px);
+    color: var(--lightBlue);
+    text-shadow: 0 0 5px white;
+}
+
 
 /* ---------------------------------------- INTRODUCTION ---------------------------------------- */
 .intro {
     padding: 40px 0;
     display: flex;
     align-items: center;
+    justify-content: space-between
 }
-
 .intro-text h1 {
     color: white;
-    text-decoration: none;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(
-        to right, red, red 33.33%, white 66.66%);
-    background-size: 300% 100%;
-    background-position: 100%;
-    transition: background-position 3s cubic-bezier(0, 0.6, 0.2, 1);
 }
-
 .intro-text h1:hover {
     transition: all 2s cubic-bezier(0.3, 0.4, 0.4, 0.8);
     background-position: 0%;
 }
-
 .profile-pic {
     width: 320px;
     height: 400px;
     border-radius: 10px;
     margin: 20px;
+}
+.intro img:hover {
+    cursor: url('../images/thats-me.png'), default !important;
 }
 
 /* ------------------------------------------ ABOUT ME ------------------------------------------ */
@@ -232,6 +255,10 @@ i:nth-child(8) {transition-delay: .16s;}
 }
 .my-tools-pics img {
     height: 60px;
+    transition: transform 0.3s ease;
+}
+.my-tools-pics img:hover {
+    transform: translateY(-10px);
 }
 
 /* ------------------------------------------ PROJECTS ------------------------------------------ */
@@ -252,9 +279,11 @@ i:nth-child(8) {transition-delay: .16s;}
     align-items: center;
     text-align: center;
     margin: 20px 0;
+    transition: opacity 0.5s ease;
 }
 .project h4 {
     margin: 5px 0;
+    color: var(--lightBlue)
 }
 .project h5 {
     margin: 10px 0;
@@ -262,4 +291,8 @@ i:nth-child(8) {transition-delay: .16s;}
 .project img {
     max-width: 500px;
     border-radius: 10px;
+    margin: 10px 0;
+}
+.project:hover {
+    opacity: 0.3;
 }
