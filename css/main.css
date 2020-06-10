@@ -1,21 +1,20 @@
+:root {
+    --primary: 0, 0%, 100%;
+    --secondary: 202, 73%, 28%;
+    --darkBlue: #08101;
+    --lightBlue: #00B0FF;
+    --grey: #2E4050;
+    --c: cubic-bezier(1,.49,.16,.96);
+}
 html {
     scroll-behavior: smooth;
 }
-
 body {
     width: 70vw;
     margin: auto;
     background-color: #08101F;
     color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
-}
-
-:root {
-    --primary: 0, 0%, 100%;
-    --secondary: 202, 73%, 28%;
-    --lightBlue: #00B0FF;
-    --grey: #2E4050;
-	--c: cubic-bezier(1,.49,.16,.96);
 }
 
 a {
@@ -62,6 +61,7 @@ h5 {
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     text-align: center;
     margin: 50px 0px 20px 0;
 }
@@ -87,6 +87,7 @@ h5 {
 .header-menu a:hover {
     background-color: var(--lightBlue);
 }
+
 /* --------------------------------------- LOGO Animation -------------------------------------- */
 .header-logo {
     width: 180px;
@@ -220,6 +221,12 @@ i:nth-child(8) {transition-delay: .16s;}
     cursor: url('../images/thats-me.png'), default !important;
 }
 
+/* --------------------------------------- NAME Animation --------------------------------------- */
+.intro-hi {
+    font-weight: 800;
+    max-width:600px;
+    height:auto;
+}
 /* ------------------------------------------ ABOUT ME ------------------------------------------ */
 .about {
     display: flex;
